@@ -106,7 +106,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
   \*********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Minam = function Minam() {\n  return (0, jsx_runtime_1.jsx)(\"h1\", {\n    children: \"\\uACF5\\uC6B1\\uC7AC\"\n  });\n};\nvar App = function App() {\n  return (0, jsx_runtime_1.jsxs)(\"div\", {\n    children: [(0, jsx_runtime_1.jsx)(Minam, {}), (0, jsx_runtime_1.jsx)(\"h1\", {\n      children: \"Hello React\"\n    })]\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://bundling/./src/app.tsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Minam = function Minam(_ref) {\n  var name = _ref.name,\n    age = _ref.age;\n  return (0, jsx_runtime_1.jsxs)(\"div\", {\n    children: [(0, jsx_runtime_1.jsx)(\"h1\", {\n      children: name\n    }), (0, jsx_runtime_1.jsx)(\"h2\", {\n      children: age\n    })]\n  });\n};\nvar App = function App() {\n  return (0, jsx_runtime_1.jsxs)(\"div\", {\n    children: [(0, jsx_runtime_1.jsx)(Minam, {\n      name: \"test\",\n      age: 4\n    }), (0, jsx_runtime_1.jsx)(\"h1\", {\n      children: \"Hello React\"\n    })]\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://bundling/./src/app.tsx?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
   \***********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar app_1 = __importDefault(__webpack_require__(/*! ./app */ \"./src/app.tsx\"));\nvar client_1 = __importDefault(__webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\"));\nvar root = client_1[\"default\"].createRoot(document.getElementById('root'));\nroot.render((0, jsx_runtime_1.jsx)(app_1[\"default\"], {}));\n(0, app_1[\"default\"])();\nvar a = 1;\nconsole.log(1);\n\n//# sourceURL=webpack://bundling/./src/index.tsx?");
+eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar app_1 = __importDefault(__webpack_require__(/*! ./app */ \"./src/app.tsx\"));\nvar client_1 = __importDefault(__webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\"));\nvar root = client_1[\"default\"].createRoot(document.getElementById('root'));\nroot.render((0, jsx_runtime_1.jsx)(app_1[\"default\"], {}));\n\n//# sourceURL=webpack://bundling/./src/index.tsx?");
 
 /***/ })
 
