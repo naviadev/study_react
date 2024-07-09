@@ -106,7 +106,17 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
   \*********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar minam_1 = __importDefault(__webpack_require__(/*! ./minam */ \"./src/minam.tsx\"));\nvar ul_1 = __importDefault(__webpack_require__(/*! ./ul */ \"./src/ul.tsx\"));\nvar App = function App() {\n  return (0, jsx_runtime_1.jsxs)(\"div\", {\n    children: [(0, jsx_runtime_1.jsx)(minam_1[\"default\"], {\n      name: \"test\",\n      age: 4\n    }), (0, jsx_runtime_1.jsx)(ul_1[\"default\"], {\n      list: ['test', 'test1', 'test3']\n    }), (0, jsx_runtime_1.jsx)(\"h1\", {\n      children: \"Hello React\"\n    })]\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://bundling/./src/app.tsx?");
+eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar minam_1 = __importDefault(__webpack_require__(/*! ./minam */ \"./src/minam.tsx\"));\nvar ul_1 = __importDefault(__webpack_require__(/*! ./ul */ \"./src/ul.tsx\"));\nvar bin_1 = __importDefault(__webpack_require__(/*! ./bin */ \"./src/bin.tsx\"));\nvar App = function App() {\n  return (0, jsx_runtime_1.jsxs)(\"div\", {\n    children: [(0, jsx_runtime_1.jsx)(minam_1[\"default\"], {\n      name: \"test\",\n      age: 4\n    }), (0, jsx_runtime_1.jsx)(ul_1[\"default\"], {\n      list: [\"test\", \"test1\", \"test3\"]\n    }), (0, jsx_runtime_1.jsx)(bin_1[\"default\"], {\n      h1TextNode: \"\\uC131\\uBE48\"\n    }), (0, jsx_runtime_1.jsx)(\"h1\", {\n      children: \"Hello React\"\n    })]\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://bundling/./src/app.tsx?");
+
+/***/ }),
+
+/***/ "./src/bin.tsx":
+/*!*********************!*\
+  !*** ./src/bin.tsx ***!
+  \*********************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Bin = function Bin(_ref) {\n  var h1TextNode = _ref.h1TextNode;\n  var style = {\n    color: \"blue\",\n    backgroundColor: \"green\"\n  };\n  return (0, jsx_runtime_1.jsx)(\"div\", {\n    children: (0, jsx_runtime_1.jsx)(\"h1\", {\n      style: style,\n      children: h1TextNode\n    })\n  });\n};\nexports[\"default\"] = Bin;\n\n//# sourceURL=webpack://bundling/./src/bin.tsx?");
 
 /***/ }),
 
